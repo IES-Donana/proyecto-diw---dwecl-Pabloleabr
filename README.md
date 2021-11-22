@@ -11,9 +11,12 @@
 
 ## PROTOTIPO<a name="id2"></a>
 [Incluye el enlace a tu prototipo realizado en Figma.]
+https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
 [Listado de modificaciones realizadas debidadmente justificadas. ]
+-La linea del timepo va a ser modificada ya que para un mejor estilo y
+ dinamica de la pagina esta quedara mucho mejor vertical.
 
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]
