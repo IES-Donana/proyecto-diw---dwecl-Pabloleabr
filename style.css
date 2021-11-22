@@ -1,0 +1,127 @@
+.bubble{
+    border-radius: 50%;
+    opacity: 0.4;
+    background: radial-gradient(circle,rgb(255, 255, 255, 0) , rgb(230, 247, 255) 75%);
+    animation: bubble 20s ease-out;
+    position: absolute;
+    user-select: none;
+    z-index: -1;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #6F9ED2;
+    color: white;
+    margin: 0;
+    z-index: -4;
+    position:relative;
+}
+header, footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1B314A;
+    box-shadow: 0px 0px 5px 5px#000;
+}
+h3, h1{
+    font-family: 'Mochi Pop';
+}
+p{
+    font-family: 'lato';
+    max-width: 40vw;
+    background-color: #0D2C4F99;
+    border-radius: 5%;
+    padding: 2vw;
+    font-size: large;
+}
+section{
+    position: fixed;
+    transform: translate(2vw, 20vh);
+    
+}
+.circle, .pcircles{
+    background-color: #396699;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 2vw;
+    user-select: none;
+    box-shadow: 1px 1px 1px 1px #000000
+}
+.pcircles{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    margin-top: 10px;
+}
+#pcirclesContainer{
+    display: flex;
+    justify-content: center;
+}
+.circle:hover, .active, .pcircles:hover{
+    background-color: #0D2C4F;
+    transition: 1s;
+    box-shadow: none;
+}
+main{
+    margin-left: 15vw;
+    margin-right: 10vw;
+    margin-top: 20vh;
+    display: block;
+}
+#inicio, #proyectos, #proyectos > img{
+    display: grid;
+}
+#inicio> div, #proyectos > h1, #proyectos > p{
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+#inicio> div, .proyectoWindow{
+    border-radius: 5%;
+    background-color: #396699;
+    display: flex;
+    justify-content: center;
+}
+#inicio>div{
+    width: 25vw;
+    height: 25vw;
+}
+#proyectos > p{
+    margin-top: 70px;
+}
+#proyectos, #estudios, .mas{
+    margin-top: 70vh;
+    column-gap: 2vw;
+}
+.proyectoWindow, #proyectImg{
+    border-radius: 5%;
+    height: 30vw;
+    width: 40vw;
+}
+#proyectImg{
+    border: 2px inset #0D2C4F;
+}
+#testimonio{
+    display: grid;
+    justify-content: center;
+    margin-top: 70vh;
+    row-gap: 10vh;
+}
+#testimonio>div{
+    column-gap: 2vw;
+    display: flex;
+}
+iframe{
+    border-radius: 5%;
+}
+footer{
+    margin-top: 20vh;
+    column-gap: 50px;
+}
+footer>form{
+    margin-top: 50px;
+}
+@keyframes bubble {
+    0%{transform: translateX(-10vw);}
+    100%{transform: translateX(100vw); }
+}

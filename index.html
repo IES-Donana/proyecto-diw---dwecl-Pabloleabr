@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>Portfolio</h3>
+    </header>
+    <section>
+        <a href="#">
+            <div class="circle active"></div>
+        </a><a href="#proyectos">
+            <div class="circle"></div>
+        </a><a href="#testimonio">
+            <div class="circle"></div>
+        </a><a href="#estudios">
+            <div class="circle"></div>
+        </a><a href="#mas">
+            <div class="circle"></div>
+        </a>
+    </section>
+    <main>
+        <div id="inicio" >
+            <h1>Un poco sobre mí</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illo, aliquam ab dignissimos veniam hic quisquam, iure, perspiciatis laudantium ducimus eveniet perferendis
+                 exercitationem quia ex quas vero ratione? Iste, magni. <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugit magnam blanditiis asperiores repellendus non sed, nostrum maiores deserunt ab. Sint veritatis
+                 tempore aliquid delectus. Fugit nihil illo fuga iusto.</p>
+            <div><img src="yo.png" alt="no esta"></div>
+        </div>
+        <div id="proyectos" >
+            <div class="proyectoWindow">
+                <a href="https://pabloleabr.github.io/Parikiclicker/" id="plink" target="_blank">
+                    <img src="img/proyecto1.png" alt="no esta" id="proyectImg">
+                </a>
+            </div>
+            <div id="pcirclesContainer">
+                <div class="pcircles active" name="1"></div>
+                <div class="pcircles" name="2"></div>
+                <div class="pcircles" name="3"></div>
+            </div>
+            <h1>Proyectos</h1>
+            <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho con el proposito de aprender y es un juego
+                del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico y simple pero sirvio para el aprendizaje
+                de muchas cosas.<br>
+                Tanto este como todos los otro proyectos, te llevaran a la pagina al pulsarlos.</p>
+        </div>
+        <div id="testimonio">
+            <h1>Testimonios</h1>
+            <div>
+                <!--por si se quiere ahcer con video
+                    <video width="400" controls>
+                        <source src="https://www.youtube.com/watch?v=FlckzMKNZW0&ab_channel=NancyPEllis" type="video/mp4">
+                    </video>
+                -->
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/FlckzMKNZW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab et unde enim, tempora nostrum, necessitatibus voluptatem quod similique culpa ullam perspiciatis! Fugit cupiditate sunt nemo, animi impedit minus similique reprehenderit.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore rerum, voluptates eius voluptate blanditiis maxime, ad id nesciunt quod soluta reprehenderit incidunt ratione possimus neque fugit, animi nisi sequi?</p>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/FlckzMKNZW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="estudios">
+            <h1>Estudios e información laboral</h1>
+        </div>
+        <div id="inicio" class="mas">
+            <h1 id="mas">¿Que más tienes que saber sobre mí?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illo, aliquam ab dignissimos veniam hic quisquam, iure, perspiciatis laudantium ducimus eveniet perferendis
+                 exercitationem quia ex quas vero ratione? Iste, magni. <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugit magnam blanditiis asperiores repellendus non sed, nostrum maiores deserunt ab. Sint veritatis
+                 tempore aliquid delectus. Fugit nihil illo fuga iusto.</p>
+            <div><img src="yo.png" alt="no esta"></div>
+        </div>
+    </main>
+    <footer>
+        <h1>Contáctame: </h1>
+        <form action="#" method="get">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="mensaje">Mensaje: </label>
+            <input type="text" name="mensaje" id="mensaje">
+            <label for="mail">Mail: </label>
+            <input type="text" name="mail" id="mail">
+        </form>
+    </footer>
+</body>
+</html>
