@@ -20,7 +20,7 @@ function addActiveDisplay(eleArray){
                 let img = document.getElementById("proyectImg");
                 let link = document.getElementById("plink");
                 let pProyect = document.getElementById("pProyect");
-                switch (e.getAttribute("name")) {
+                switch (e.getAttribute("id")) {
                     case "1":
                         img.src = "img/proyecto1.png"
                         link.href = "https://pabloleabr.github.io/Parikiclicker/"
@@ -36,7 +36,7 @@ function addActiveDisplay(eleArray){
                     case "3":
                         img.src = "img/proyecto3.png"
                         link.href = "https://github.com/Pabloleabr/pygame-things/tree/master/fractals"
-                        pProyect.innerText = `Mandlebrods fractal, esta una \"aplicación\"(esta solo en forma codigo) hecha con python y pygame que puede generarte en pantalla este fractal(descubierto por Mandelbrod) o crearte una imagen de la resolucion que quieras, cuanto mayor resolucion mas tarda en generar pero mas adentro del fractal podras ver, en la carpeta de imagenes podras ver algunos ejemplos de los fractales que puedes generar. 
+                        pProyect.innerText = `Mandlebrods fractal, esta una \"aplicación\"(esta solo en forma codigo) hecha con python y pygame que puede generarte en pantalla este fractal(descubierto por Mandelbrod) o crearte una imagen de la resolucion que quieras, cuanto mayor resolucion mas tarda en generar pero mas adentro del fractal podras ver, en la carpeta de imagenes podras ver algunos ejemplos de los fractales que puedes generar.
                                             No es proyecto para nada terminado de refinar, pero muestra la belleza de los fractales y el uso de matematizas complejas para generarlos, ademas de la utilidad de python hacer culquier tipo de aplicación`
                         break;
                 }

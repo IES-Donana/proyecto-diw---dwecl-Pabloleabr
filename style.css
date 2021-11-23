@@ -34,10 +34,13 @@ p{
     padding: 2vw;
     font-size: large;
 }
-section{
+#sidenav{
     position: fixed;
     transform: translate(2vw, 20vh);
 
+}
+iframe{
+    border:0;
 }
 .circle, .pcircles{
     background-color: #396699;
@@ -69,20 +72,20 @@ main{
     margin-top: 20vh;
     display: block;
 }
-#inicio, #proyectos, #proyectos > img{
+.inicio, #proyectos, #proyectos > img{
     display: grid;
 }
-#inicio> div, #proyectos > h1, #proyectos > p{
+.inicio> div, #proyectos > h1, #proyectos > p{
     grid-column: 2;
     grid-row: 1 / 3;
 }
-#inicio> div, .proyectoWindow{
+.inicio> div, .proyectoWindow{
     border-radius: 5%;
     background-color: #396699;
     display: flex;
     justify-content: center;
 }
-#inicio>div{
+.inicio>div{
     width: 25vw;
     height: 25vw;
 }
@@ -117,7 +120,15 @@ footer{
     margin-top: 20vh;
     column-gap: 50px;
 }
+#icons{
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
 #icons > p{
+    padding: 0;
+    margin: 0;
     background-color:unset;
 }
 
@@ -190,6 +201,7 @@ footer{
 
   /* Add arrows to the right container (pointing left) */
 .right::before {
+    left: 30px;
     border-width: 10px 10px 10px 0;
     border-color: transparent #396699 transparent transparent;
   }
@@ -206,14 +218,17 @@ footer{
     position: relative;
     border-radius: 6px;
   }
-  
+.fa{
+    text-decoration: none;
+    color: #6F9ED2;
+}
 @keyframes bubble {
     0%{transform: translateX(-10vw);}
     100%{transform: translateX(100vw); }
 }
 
 @media screen and (max-width:950px){
-    #proyectImg, .proyectoWindow, #inicio > div, iframe{
+    #proyectImg, .proyectoWindow, .inicio > div, iframe{
         width: 70vw;
         max-width: 70vw;
         height: 60vw;
@@ -222,7 +237,7 @@ footer{
         padding: 0.5vw;
         max-width: 70vw;
     }
-    #proyectos, #inicio, #testimonio > div, #testimonio{
+    #proyectos, .inicio, #testimonio > div, #testimonio{
         display: block;
     }
     .timeline::after {
