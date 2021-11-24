@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mochiy+Pop+P+One&display=swap');
 
-.bubble{
+.bubble{/*estilo para que las burbujas parezcan burbujas*/
     border-radius: 50%;
     opacity: 0.4;
     background: radial-gradient(circle,rgb(255, 255, 255, 0) , rgb(230, 247, 255) 75%);
@@ -17,7 +17,7 @@ html, body{
     background-color: #6F9ED2;
     color: white;
     margin: 0;
-    z-index: -4;
+    z-index: -4;/*para que las burbujas esten encima de estos pero no del resto*/
     position:relative;
 }
 header, footer{
@@ -37,15 +37,15 @@ p{
     padding: 2vw;
     font-size: large;
 }
-#sidenav{
+#sidenav{/*posiciona el menu navegacion*/
     position: fixed;
     transform: translate(2vw, 20vh);
-
 }
-iframe{
+
+iframe{/*quita el borde por defecto de los iframe */
     border:0;
 }
-.circle, .pcircles{
+.circle, .pcircles{/*estilos para botones circulares*/
     background-color: #396699;
     border-radius: 50%;
     width: 35px;
@@ -54,7 +54,7 @@ iframe{
     user-select: none;
     box-shadow: 1px 1px 1px 1px #000000
 }
-.pcircles{
+.pcircles{/*ajuste tamaño de los botones para seleccionar proyectos*/
     width: 20px;
     height: 20px;
     margin: 5px;
@@ -64,7 +64,7 @@ iframe{
     display: flex;
     justify-content: center;
 }
-.circle:hover, .active, .pcircles:hover{
+.circle:hover, .active, .pcircles:hover{/*efecto boton al ser seleccionado*/
     background-color: #0D2C4F;
     transition: 1s;
     box-shadow: none;
@@ -75,6 +75,8 @@ main{
     margin-top: 20vh;
     display: block;
 }
+
+/*ajueste de todos los diseños en horizontal*/
 .inicio, #proyectos, #proyectos > img{
     display: grid;
 }
@@ -93,10 +95,10 @@ main{
     height: 25vw;
     border-radius: 50%;
 }
-#proyectos > p{
+#proyectos > p{/*arreglo de posicionamiento de texto*/
     margin-top: 70px;
 }
-#proyectos, #estudios, .mas{
+#proyectos, #estudios, .mas{/*espacios entre cada seccion*/
     margin-top: 70vh;
     column-gap: 2vw;
 }
@@ -122,22 +124,22 @@ main{
     column-gap: 2vw;
     display: flex;
 }
-#testimonio p{
+#testimonio p{/*ajuste del tamaño para que quede bien*/
     height: 50px;
 }
 
-footer{
+footer{/*Cambios al footer*/
     display: grid;
     margin-top: 20vh;
     column-gap: 50px;
 }
-#icons{
+#icons{/*contenedor de iconos*/
     margin-top: 20px;
     gap: 10px;
     display: flex;
     justify-content: center;
 }
-#icons > p{
+#icons > p{/*tecto final despues de iconos*/
     padding: 0;
     margin: 0;
     background-color:unset;
@@ -228,7 +230,7 @@ footer{
     position: relative;
     border-radius: 6px;
   }
-.fa{
+.fa{ /*ajuste para los iconos*/
     text-decoration: none;
     color: #6F9ED2;
 }

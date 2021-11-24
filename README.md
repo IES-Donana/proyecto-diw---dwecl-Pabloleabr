@@ -9,6 +9,7 @@
 ## DESCRIPCIÓN<a name="id1"></a>
 [Incluye la descripción de tu proyecto.]
 
+
 ## PROTOTIPO<a name="id2"></a>
 [Incluye el enlace a tu prototipo realizado en Figma.]
 https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
@@ -17,6 +18,8 @@ https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
 [Listado de modificaciones realizadas debidadmente justificadas. ]
 -La linea del tiempo va a ser modificada ya que para un mejorar el estilo y
  dinamica de la página esta quedara mucho mejor vertical en vez de horizontal.
+-Las fotos de perfil que me mostrarían a mí seran circulares por mejor estetica 
+ desde mí punto de vista.
 
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]
@@ -25,6 +28,7 @@ https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
     >validado y sin problemas.
 -https://validator.w3.org/
     >validado y sin problemas.
+-https://fonts.google.com/
 -vscode
 
 
