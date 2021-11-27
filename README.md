@@ -8,6 +8,16 @@
 
 ## DESCRIPCIÓN<a name="id1"></a>
 [Incluye la descripción de tu proyecto.]
+La páginasera de una sola página que fluya dinámica mente hacia
+abajo con mis datos, este tendrá un menú de navegación lateral que te permite
+visitar la página más cómodamente, empezando con algo sobre mí, viendo un poco alguno
+de los proyectos que he realizado con alguna demostración interactiva en la página. Esto lo
+seguirá algunos testimonios que en este caso serán inventados ya que no tengo para que al
+menos se vea la estructura.
+Mis formaciones mediante un diagrama estilo flecha que muestre lo
+que he hecho con los años, incluyendo algún detalle más sobre mí como mis hobbies
+relacionados con la formación que tengo y gustos relacionados al tema.
+Finalmente un footer con toda mi información de contactos y etc.
 
 
 ## PROTOTIPO<a name="id2"></a>
@@ -20,6 +30,9 @@ https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
  dinamica de la página esta quedara mucho mejor vertical en vez de horizontal.
 -Las fotos de perfil que me mostrarían a mí seran circulares por mejor estetica 
  desde mí punto de vista.
+-El formulario recibira cambios pero solo para cumplir con los requisitos de proyecto
+ de cliente que haciendo el prototipo eran desconocidos y no habia manera de saber
+ que iba o no a ser necesario.
 
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]
