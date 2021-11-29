@@ -77,12 +77,20 @@ main{
 }
 
 /*ajueste de todos los diseños en horizontal*/
-.inicio, #proyectos, #proyectos > img{
+.inicio, #proyectos, #proyectos > img, form{
     display: grid;
 }
 .inicio> div, #proyectos > h1, #proyectos > p{
     grid-column: 2;
     grid-row: 1 / 3;
+}
+
+/*ajustes a estructuara formulario*/
+form>div{
+    margin-left: 6px;
+    grid-column: 2;
+    grid-row: 1 / 8;
+    display: grid;
 }
 .inicio> div, .proyectoWindow{
     border-radius: 5%;
@@ -90,6 +98,10 @@ main{
     display: flex;
     justify-content: center;
 }
+#enviar{
+    margin: 6px 28px;
+}
+
 .inicio>div{
     width: 25vw;
     height: 25vw;

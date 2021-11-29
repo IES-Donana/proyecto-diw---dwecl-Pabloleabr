@@ -105,13 +105,16 @@
         <h1>Contáctame: </h1>
         <form action="#" method="get">
             <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="nombre" id="nombre" maxlength="50">
             <label for="nombre">Apellidos: </label>
-            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="nombre" id="nombre" maxlength="100">
             <label for="mail">Mail: </label>
             <input type="text" name="mail" id="mail">
-            <label for="mensaje">Mensaje: </label>
-            <input type="text" name="mensaje" id="mensaje">
+            <div>
+                <label for="mensaje">Mensaje: </label>
+                <textarea  name="mensaje" id="mensaje" cols="30" rows="8"></textarea>
+            </div>
+            <input type="submit" value="Enviar" id="enviar">
         </form>
         <div id="icons">
             <a href="#" class="fa fa-facebook"></a>
