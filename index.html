@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="JS/main.js" defer></script>
+    <script src="JS/form.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -105,14 +106,14 @@
         <h1>Contáctame: </h1>
         <form action="#" method="get">
             <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" id="nombre" maxlength="50">
-            <label for="nombre">Apellidos: </label>
-            <input type="text" name="nombre" id="nombre" maxlength="100">
+            <input type="text" name="nombre" id="nombre" maxlength="50" required>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos" id="apellidos" maxlength="100" required>
             <label for="mail">Mail: </label>
-            <input type="text" name="mail" id="mail">
+            <input type="text" name="mail" id="mail" required pattern="^\w+@\w+\.\w+$">
             <div>
                 <label for="mensaje">Mensaje: </label>
-                <textarea  name="mensaje" id="mensaje" cols="30" rows="8"></textarea>
+                <textarea  name="mensaje" id="mensaje" cols="30" rows="8" style="resize: none;" required></textarea>
             </div>
             <input type="submit" value="Enviar" id="enviar">
         </form>
