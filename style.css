@@ -37,8 +37,12 @@ p{
     padding: 2vw;
     font-size: large;
 }
-#sidenav{/*posiciona el menu navegacion*/
+#sidenav{
     position: fixed;
+    transform: translate(2vw, 20vh);
+    
+}
+#sidenav.is-active{/*posiciona el menu navegacion*/
     transform: translate(2vw, 20vh);
 }
 
@@ -283,6 +287,76 @@ border-radius: 10px;
         padding: 0.5vw;
         max-width: 70vw;
     }
+
+    /*
+      zona de menu hamburguesa
+      mayoria del codigo es copia pega para hacer la actividad 
+      de cliente modificando algunas cosas para que quede bien
+    */
+    #sidenav{
+        transform: translate(-100px, 20vh);
+    }
+    #sidenav.is_active{
+        transform: translate(2vw, 20vh);
+        transition: 1s;
+    }
+    #hamburguesa{
+        position:fixed;
+        background-color:transparent;
+        left:0;
+        top:0;
+        height:30px;
+        width:30px;
+        padding:15px 10px;
+        -webkit-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0);
+        -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        z-index:1002;
+        cursor:pointer;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none
+      }
+    #hamburguesa.is-active{
+        background-color:none;
+      }
+    ._layer{
+        background:#ffffff;
+        margin-bottom:4px;
+        border-radius:2px;
+        width:28px;
+        height:4px;
+        opacity:1;
+        -webkit-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0);
+        -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+      }
+    #hamburguesa:hover .-top{
+        -webkit-transform:translateY(-100%);
+        -ms-transform:translateY(-100%);
+        transform:translateY(-100%);
+      }
+    #hamburguesa:hover .-bottom{
+        -webkit-transform:translateY(100%);
+        -ms-transform:translateY(100%);
+        transform:translateY(100%);
+        }
+    #hamburguesa.is-active .-top{
+        -webkit-transform:translateY(200%) rotate(45deg) !important;
+        -ms-transform:translateY(200%) rotate(45deg) !important;
+        transform:translateY(200%) rotate(45deg) !important;
+      }
+    #hamburguesa.is-active .-mid{
+        opacity:0;
+      }
+    #hamburguesa.is-active .-bottom{
+        -webkit-transform:translateY(-200%) rotate(135deg) !important;
+        -ms-transform:translateY(-200%) rotate(135deg) !important;
+        transform:translateY(-200%) rotate(135deg) !important;
+      }
 
     /* Hace que los elemento se muestren verticalemnte en vez de horizontal*/
     #proyectos, .inicio, #testimonio > div, #testimonio{

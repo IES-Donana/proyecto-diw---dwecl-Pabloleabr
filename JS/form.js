@@ -2,14 +2,10 @@
 
 const form = document.forms[0];
 
-    form[0].addEventListener('focusout',()=>{
-        if(form[0].checkValidity()){
+    form[0].addEventListener('focusout',checkNombre);
+    
+    function checkNombre(){
+        if(this.checkValidity()){
             
         }
-
-    })
-    form[1].addEventListener('focusout',()=>{
-
-    })
-
-
+    }
