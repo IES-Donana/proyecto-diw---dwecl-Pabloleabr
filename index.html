@@ -7,35 +7,35 @@
     <title>Portfolio</title>
     <script src="JS/main.js" defer></script>
     <script src="JS/form.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header>
-        <h3>Portfolio</h3>
+<body class="mw-100 bg-blue-300 text-white">
+    <header class="flex bg-blue-900 justify-center shadow-outline">
+        <h3 class="p-2">Portfolio</h3>
     </header>
-    <div id="sidenav">
+    <div id="sidenav" class="fixed transform translate-x-4 translate-y-32">
         <a href="#">
-            <div class="circle active"></div>
+            <div class="bg-blue-600 rounded-full h-12 w-12 m-4 shadow-outline hover:bg-blue-900" ></div>
         </a><a href="#proyectos">
-            <div class="circle"></div>
+            <div class="bg-blue-600 rounded-full h-12 w-12 m-4 shadow-outline hover:bg-blue-900"></div>
         </a><a href="#testimonio">
-            <div class="circle"></div>
+            <div class="bg-blue-600 rounded-full h-12 w-12 m-4 shadow-outline hover:bg-blue-900" ></div>
         </a><a href="#estudios">
-            <div class="circle"></div>
+            <div class="bg-blue-600 rounded-full h-12 w-12 m-4 shadow-outline hover:bg-blue-900"></div>
         </a><a href="#mas">
-            <div class="circle"></div>
+            <div class="bg-blue-600 rounded-full h-12 w-12 m-4 shadow-outline hover:bg-blue-900"></div>
         </a>
     </div>
-    <main>
-        <div class="inicio" >
+    <main class="m-32">
+        <div class="inicio grid grid-cols-2 gap-2">
             <h1>Un poco sobre mí</h1>
-            <p>Me llamo Pablo Leal del Ojo y soy un joven desarrolador de aplicaciones web, que le entusiasma el
+            <div><img src="/img/yo.png" alt="no esta"></div>
+            <p class="bg-blue-400 rounded-lg p-3">Me llamo Pablo Leal del Ojo y soy un joven desarrolador de aplicaciones web, que le entusiasma el
                 mundo de la programación y estar constantemente aprendiendo cosas nuevas. <br>
                 Con esta página espero que aprendas un poco sobre mí, mis habilidades actuales y mi pasión por mi trabajo</p>
-            <div><img src="/img/yo.png" alt="no esta"></div>
         </div>
-        <div id="proyectos" >
+        <div id="proyectos" class=" mt-64">
             <h1>Proyectos</h1>
             <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho con el proposito de aprender y es un juego
                 del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico y simple pero sirvio para el aprendizaje
