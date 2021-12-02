@@ -40,7 +40,7 @@ p{
 #sidenav{
     position: fixed;
     transform: translate(2vw, 20vh);
-    
+
 }
 #sidenav.is-active{/*posiciona el menu navegacion*/
     transform: translate(2vw, 20vh);
@@ -93,12 +93,12 @@ main{
 footer>div{
     grid-column: 4 / 6;
     grid-row: 1 / 8;
-    
+
 }
 footer>form{
     grid-column: 1 / 4;
     grid-row: 2 / 8;
-    
+
 }
 .inicio> div, .proyectoWindow{
     border-radius: 5%;
@@ -150,7 +150,7 @@ footer>form{
 footer{/*Cambios al footer*/
     display: grid;
     margin-top: 20vh;
-    padding: 50px;
+    padding: 50px 12vw;
     column-gap: 50px;
 }
 #icons{/*contenedor de iconos*/
@@ -295,12 +295,6 @@ border-radius: 10px;
         padding: 0.5vw;
         max-width: 70vw;
     }
-
-    /*
-      zona de menu hamburguesa
-      mayoria del codigo es copia pega para hacer la actividad 
-      de cliente modificando algunas cosas para que quede bien
-    */
     #sidenav{
         transform: translate(-100px, 20vh);
     }
@@ -308,6 +302,16 @@ border-radius: 10px;
         transform: translate(2vw, 20vh);
         transition: 1s;
     }
+    /* Hace que los elemento se muestren verticalemnte en vez de horizontal*/
+    #proyectos, .inicio, #testimonio > div, #testimonio, footer{
+        display: block;
+    }
+
+    /*
+    zona de menu hamburguesa
+    mayoria del codigo es copia pega para hacer la actividad
+    de cliente modificando algunas cosas para que quede bien
+    */
     #hamburguesa{
         position:fixed;
         background-color:transparent;
@@ -366,10 +370,6 @@ border-radius: 10px;
         transform:translateY(-200%) rotate(135deg) !important;
       }
 
-    /* Hace que los elemento se muestren verticalemnte en vez de horizontal*/
-    #proyectos, .inicio, #testimonio > div, #testimonio{
-        display: block;
-    }
 
     .timeline::after {
         left: 31px;
