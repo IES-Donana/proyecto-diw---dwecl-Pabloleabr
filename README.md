@@ -34,8 +34,8 @@ https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
  de cliente que haciendo el prototipo eran desconocidos y no habia manera de saber
  que iba o no a ser necesario.
 -La navegación ahora tiene menu hamburguesa en dispositivos pequeños, es un poco inncesario
- ya queel diseño estaba hecho si el menuhamburguesa pero para cumplir con los requisitos
- de la parte de clietne se lo he añadido para que quede de la mejor forma posible
+ ya que el diseño estaba hecho sin el menuhamburguesa pero para cumplir con los requisitos
+ de la parte de cliente se lo he añadido para que quede de la mejor forma posible
 
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]

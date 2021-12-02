@@ -90,11 +90,15 @@ main{
 }
 
 /*ajustes a estructuara formulario*/
-form>div{
-    margin-left: 6px;
-    grid-column: 2;
+footer>div{
+    grid-column: 4 / 6;
     grid-row: 1 / 8;
-    display: grid;
+    
+}
+footer>form{
+    grid-column: 1 / 4;
+    grid-row: 2 / 8;
+    
 }
 .inicio> div, .proyectoWindow{
     border-radius: 5%;
@@ -146,6 +150,7 @@ form>div{
 footer{/*Cambios al footer*/
     display: grid;
     margin-top: 20vh;
+    padding: 50px;
     column-gap: 50px;
 }
 #icons{/*contenedor de iconos*/
@@ -154,9 +159,10 @@ footer{/*Cambios al footer*/
     display: flex;
     justify-content: center;
 }
-#icons > p{/*tecto final despues de iconos*/
+footer> div > p{/*tecto final despues de iconos*/
     padding: 0;
     margin: 0;
+    margin-top: 50px;
     background-color:unset;
 }
 
@@ -248,8 +254,11 @@ footer{/*Cambios al footer*/
 .fa{ /*ajuste para los iconos*/
     text-decoration: none;
     color: #6F9ED2;
+    height: 20px;
 }
-
+.fa:hover{
+    color: #ffffffea;
+}
 /*modificaciones al scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
