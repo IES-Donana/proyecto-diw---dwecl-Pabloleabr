@@ -114,8 +114,8 @@ form>div{
 #proyectos > p{/*arreglo de posicionamiento de texto*/
     margin-top: 70px;
 }
-#proyectos, #estudios, .mas{/*espacios entre cada seccion*/
-    margin-top: 70vh;
+#proyectos, #estudios, .mas, #testimonio{/*espacios entre cada seccion*/
+    margin-top: 20vh;
     column-gap: 2vw;
 }
 .proyectoWindow, #proyectImg, iframe{
@@ -133,7 +133,6 @@ form>div{
 #testimonio{
     display: grid;
     justify-content: center;
-    margin-top: 70vh;
     row-gap: 10vh;
 }
 #testimonio>div{
