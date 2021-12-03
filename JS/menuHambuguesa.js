@@ -17,6 +17,7 @@ function addLink(element, href){
     element.appendChild(a);
 }
 
+var timeout;//varible para el timeout de remover el menu
 /**
  * cambia las classes de los menus de navegacion para aparezca y desaparezca
  * @returns void
@@ -26,10 +27,11 @@ function toggleMenu() {
         //tengo que hacerlo por separado en cada caso para que se muestres
         //la animacion de salida en este caso y la de entrada en el else
         navlist.classList.toggle('is_active');
-        setTimeout(()=>navlist.remove(),1000);
+        timeout = setTimeout(()=>navlist.remove(),1000);
     }
     else{
-        menu.insertAdjacentElement('afterbegin', navlist);
+        clearTimeout(timeout);//para que si lo pulsas repetidamente muy rapido no te lo borre
+        menu.insertAdjacentElement('afterend', navlist);
         //le pongo un dealay muy chico para por que si no aparece ya en el lado del tiron
         setTimeout(()=>navlist.classList.toggle("is_active"), 10);
 
