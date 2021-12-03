@@ -35,6 +35,10 @@ function toggleMenu() {
         //le pongo un dealay muy chico para por que si no aparece ya en el lado del tiron
         setTimeout(()=>navlist.classList.toggle("is_active"), 10);
 
+        //funcion del main para darle el efecto e que se quede pulsado
+        addActiveDisplay(document.getElementById('creado').querySelectorAll('.circle'));
+        //hago un get id y despues el query selector para coger solo los del creado y no los del
+        //original ta que tienen las mismas clases
     }
   this.classList.toggle('is-active');
 }
@@ -47,6 +51,7 @@ menu.addEventListener('click', toggleMenu);
 //creo el nav y añado todos sus elementos hijos
 let navlist = document.createElement('div');
 navlist.classList.add('sidenav');
+navlist.setAttribute('id','creado');
 addLink(navlist, '#');
 addLink(navlist, '#proyectos');
 addLink(navlist, '#testimonios');
