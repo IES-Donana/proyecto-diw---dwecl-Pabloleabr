@@ -54,7 +54,7 @@ navlist.classList.add('sidenav');
 navlist.setAttribute('id','creado');
 addLink(navlist, '#');
 addLink(navlist, '#proyectos');
-addLink(navlist, '#testimonios');
+addLink(navlist, '#testimonio');
 addLink(navlist, '#estudios');
 addLink(navlist, '#mas');
 
