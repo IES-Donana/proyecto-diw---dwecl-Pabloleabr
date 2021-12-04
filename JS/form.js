@@ -1,7 +1,6 @@
 //JS para la actividad del formulario
 const form = document.forms[0];
 
-
 /**
  * funcion generadora para crear los validar con mensajes diferentes
  *  @param string Mensaje de error
