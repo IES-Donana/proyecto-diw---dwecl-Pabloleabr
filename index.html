@@ -28,31 +28,35 @@
         </a>
     </div>
     <main class="m-32 flex flex-col justify-center">
-        <div class="inicio grid grid-cols-3 grid-rows-3 gap-2 justify-center p-16">
+        <div class="inicio grid grid-cols-4 grid-rows-4 gap-2 justify-center p-16">
             <h1 class="col-span-2 text-4xl">Un poco sobre mí</h1>
             <div class="row-span-3"><img src="/img/yo.png" alt="no esta" class="rounded-full"></div>
             <p class="bg-blue-400 rounded-lg p-3 col-span-2 row-span-2">Me llamo Pablo Leal del Ojo y soy un joven desarrolador de aplicaciones web, que le entusiasma el
                 mundo de la programación y estar constantemente aprendiendo cosas nuevas. <br>
                 Con esta página espero que aprendas un poco sobre mí, mis habilidades actuales y mi pasión por mi trabajo</p>
         </div>
-        <div id="proyectos" class=" mt-64">
-            <h1>Proyectos</h1>
-            <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho con el proposito de aprender y es un juego
-                del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico y simple pero sirvio para el aprendizaje
-                de muchas cosas.<br>
-                Tanto este como todos los otro proyectos, te llevaran a la página al pulsarlos.</p>
-            <div class="proyectoWindow">
+
+        <div id="proyectos" class=" mt-64 grid grid-cols-4 grid-rows-7 gap-2 justify-center p-16">
+            <div id="pcirclesContainer" class="flex col-span-3 justify-center">
+                <div class="pcircles active bg-blue-600 rounded-full h-6 w-6 m-4 shadow-outline hover:bg-blue-900 select-none" id="1"></div>
+                <div class="pcircles bg-blue-600 rounded-full h-6 w-6 m-4 shadow-outline hover:bg-blue-900 select-none" id="2"></div>
+                <div class="pcircles bg-blue-600 rounded-full h-6 w-6 m-4 shadow-outline hover:bg-blue-900 select-none" id="3"></div>
+            </div>
+            <h1 class="text-4xl">Proyectos</h1>
+            <div class="proyectoWindow  row-span-6 col-span-3">
                 <a href="https://pabloleabr.github.io/Parikiclicker/" id="plink" target="_blank">
-                    <img src="img/proyecto1.png" alt="no esta" id="proyectImg">
+                    <img src="img/proyecto1.png" alt="no esta" id="proyectImg" class="rounded-lg border-2 border-black">
                 </a>
             </div>
-            <div id="pcirclesContainer">
-                <div class="pcircles active" id="1"></div>
-                <div class="pcircles" id="2"></div>
-                <div class="pcircles" id="3"></div>
-            </div>
+            <p id="pProyect" class="bg-blue-400 rounded-lg p-3 row-span-6" >Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho con el proposito de aprender y es un juego
+                del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico y simple pero sirvio para el aprendizaje
+                de muchas cosas.<br>
+                Tanto este como todos los otro proyectos, te llevaran a la página al pulsarlos.
+            </p>
+            
         </div>
-        <div id="testimonio">
+
+        <div id="testimonio" class=" mt-64">
             <h1>Testimonios</h1>
             <div>
                 <!--por si se quiere ahcer con video

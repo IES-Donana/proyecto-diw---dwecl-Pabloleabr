@@ -8,7 +8,8 @@
 
 ## DESCRIPCIÓN<a name="id1"></a>
 [Incluye la descripción de tu proyecto.]
-trabajando con el framework reaciendo la primera página.
+
+trabajando con el framework reaciendo la primera y segunda página.
 
 
 ## PROTOTIPO<a name="id2"></a>
@@ -17,6 +18,7 @@ https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
 [Listado de modificaciones realizadas debidadmente justificadas. ]
+
 -sombras han tenido que ser cambiadas por que con el framework sin modificar
  no puedo cambiar el color de estas.
 -al no tener css no puedo implementar la classe para las burbujas de fondo.
