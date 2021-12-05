@@ -72,6 +72,7 @@ iframe{/*quita el borde por defecto de los iframe */
     background-color: #0D2C4F;
     transition: 1s;
     box-shadow: none;
+    border: #6F9ED2 solid 1px;
 }
 main{
     margin-left: 15vw;
@@ -144,7 +145,7 @@ footer>form{
     display: flex;
 }
 #testimonio p{/*ajuste del tamaño para que quede bien*/
-    height: 50px;
+    height: 80px
 }
 
 footer{/*Cambios al footer*/
