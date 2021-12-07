@@ -340,7 +340,7 @@ border-radius: 10px;
         user-select:none
       }
     #hamburguesa.is-active{
-        background-color:none;
+        background-color:transparent;
       }
     ._layer{
         background:#ffffff;

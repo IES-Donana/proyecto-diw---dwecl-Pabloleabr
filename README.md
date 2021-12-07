@@ -41,7 +41,7 @@ https://www.figma.com/file/OxuclSawC8elTL3AkqfLVB/Portafolios?node-id=1%3A2
 [Listado de recursos usados]
 -https://www.w3schools.com
 -https://jigsaw.w3.org/css-validator/
-    >validado y sin problemas.
+    >validado y sin errores, solo algunos warnings por usar el webkit y los import.
 -https://validator.w3.org/
     >validado y sin problemas.
 -https://fonts.google.com/
