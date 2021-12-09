@@ -56,7 +56,8 @@ iframe{/*quita el borde por defecto de los iframe */
     height: 35px;
     margin: 2vw;
     user-select: none;
-    box-shadow: 1px 1px 1px 1px #000000
+    border:transparent;
+    box-shadow: 1px 1px 1px 1px #000000;
 }
 .pcircles{/*ajuste tamaño de los botones para seleccionar proyectos*/
     width: 20px;
