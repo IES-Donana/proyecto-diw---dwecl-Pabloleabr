@@ -135,6 +135,11 @@ footer>form{
 }
 #proyectImg{
     border: 2px inset #0D2C4F;
+    transition: all 1s;
+}
+#proyectImg:hover{
+    transform: scale(1.02);
+    filter: grayscale(100%);
 }
 #testimonio{
     display: grid;
