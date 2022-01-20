@@ -10,13 +10,22 @@
     <script src="JS/menuHambuguesa.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/ico" href="img/logo.ico">
+    <link rel="icon" type="image/ico" href="media/img/logo.ico">
 </head>
 <body>
+    <!--Esta hecho pero no me gusta que se escuche eso al abrir
+    <audio autoplay><source src="media/audio/bk-sound.mp3" type="audio/mpeg"></audio>
+    -->
     <header>
-
-        <h3>Portfolio<img src="img/logotipo.svg" alt="svg"></h3>
+        <h3>Portfolio</h3>
+        <img src="media/img/logotipo.svg" alt="svg" width="40px" height="40px">
     </header>
+    <div id="fondo">
+        <video autoplay muted loop>
+            <source src="media/video/Light_Background.mov" type="video/mp4"> 
+        </video>
+        <div></div>
+    </div>
     <div id="hamburguesa">
         <div class="_layer -top"></div>
         <div class="_layer -mid"></div>
@@ -41,40 +50,47 @@
             <p>Me llamo Pablo Leal del Ojo y soy un joven desarrolador de aplicaciones web, que le entusiasma el
                 mundo de la programación y estar constantemente aprendiendo cosas nuevas. <br>
                 Con esta página espero que aprendas un poco sobre mí, mís habilidades actuales y mí pasión por mí trabajo</p>
-            <div><img src="img/yo.png" alt="no esta"></div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="media/img/yo.png">
+                <img src="media/img/yo-big.jpg" alt="no esta">
+            </picture>
+
         </div>
         <div id="proyectos" >
             <h1>Proyectos</h1>
-            <div id="pcirclesContainer">
-                <div class="pcircles active" id="1"></div>
-                <div class="pcircles" id="2"></div>
-                <div class="pcircles" id="3"></div>
-            </div>
             <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho con el proposito de aprender y es un juego
                 del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico y simple pero sirvio para el aprendizaje
                 de muchas cosas.<br>
                 Tanto este como todos los otro proyectos, te llevaran a la página al pulsarlos.</p>
-            <div class="proyectoWindow">
+                <div class="proyectoWindow">
+                <div id="pcirclesContainer">
+                    <div class="pcircles active" id="1"></div>
+                    <div class="pcircles" id="2"></div>
+                    <div class="pcircles" id="3"></div>
+                </div>
                 <a href="https://pabloleabr.github.io/Parikiclicker/" id="plink" target="_blank">
-                    <img src="img/proyecto1.png" alt="no esta" id="proyectImg">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="media/img/proyecto-1-sm.jpeg" id="pSource">
+                        <img src="media/img/proyecto-1.jpeg" alt="no esta" id="proyectImg">
+                    </picture>
                 </a>
             </div>
         </div>
         <div id="testimonio">
             <h1>Testimonios</h1>
             <div>
-                <!--por si se quiere ahcer con video
-                    <video width="400" controls>
-                        <source src="https://www.youtube.com/watch?v=FlckzMKNZW0&ab_channel=NancyPEllis" type="video/mp4">
-                    </video>
-                -->
-                <iframe src="https://www.youtube.com/embed/FlckzMKNZW0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                <video controls poster="media/img/poster1.jpg">
+                    <source src="media/video/Testimonio de manolita.mp4" type="video/mp4">
+                </video>
+            
                 <p>"Trabaja de manera profesional, rápido y sin distracciones siempre haciendo su trabajo para la fecha prevista o antes"</p>
             </div>
             <div>
                 <p>"Gran trabajador, que ayuda siempre a compañeros que tengan dudas o necesiten ayuda con un trabajo"</p>
-                <iframe src="https://www.youtube.com/embed/FlckzMKNZW0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video controls poster="media/img/poster2.jpg">
+                    <source src="media/video/Testimonio de manolita.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
             </div>
         </div>
         <div id="estudios">
@@ -107,7 +123,10 @@
                 y algun minijuego como hobbie. <br>
                 Soy gran fan de las artes marciales, comida rica y de hecharme siesta los días que
                 puedo permitírmelo.</p>
-            <div><img src="img/yo.png" alt="no esta"></div>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="media/img/yo.png">
+                    <img src="media/img/yo-big.jpg" alt="no esta">
+                </picture>
         </div>
     </main>
     <footer>
