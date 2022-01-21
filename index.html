@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/ico" href="media/img/logo.ico">
 </head>
+
 <body>
     <!--Esta hecho pero no me gusta que se escuche eso al abrir
     <audio autoplay><source src="media/audio/bk-sound.mp3" type="audio/mpeg"></audio>
@@ -45,24 +47,27 @@
         </a>
     </div>
     <main>
-        <div class="inicio" >
+        <div class="inicio">
             <h1>Un poco sobre mí</h1>
             <p>Me llamo Pablo Leal del Ojo y soy un joven desarrolador de aplicaciones web, que le entusiasma el
                 mundo de la programación y estar constantemente aprendiendo cosas nuevas. <br>
-                Con esta página espero que aprendas un poco sobre mí, mís habilidades actuales y mí pasión por mí trabajo</p>
+                Con esta página espero que aprendas un poco sobre mí, mís habilidades actuales y mí pasión por mí
+                trabajo</p>
             <picture>
                 <source media="(max-width: 600px)" srcset="media/img/yo.png">
                 <img src="media/img/yo-big.jpg" alt="no esta">
             </picture>
 
         </div>
-        <div id="proyectos" >
+        <div id="proyectos">
             <h1>Proyectos</h1>
-            <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho con el proposito de aprender y es un juego
-                del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico y simple pero sirvio para el aprendizaje
+            <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho
+                con el proposito de aprender y es un juego
+                del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico
+                y simple pero sirvio para el aprendizaje
                 de muchas cosas.<br>
                 Tanto este como todos los otro proyectos, te llevaran a la página al pulsarlos.</p>
-                <div class="proyectoWindow">
+            <div class="proyectoWindow">
                 <div id="pcirclesContainer">
                     <div class="pcircles active" id="1"></div>
                     <div class="pcircles" id="2"></div>
@@ -83,13 +88,15 @@
                     <source src="media/video/Testimonio de manolita.mp4" type="video/mp4">
                 </video>
 
-                <p>"Trabaja de manera profesional, rápido y sin distracciones siempre haciendo su trabajo para la fecha prevista o antes"</p>
+                <p>"Trabaja de manera profesional, rápido y sin distracciones siempre haciendo su trabajo para la fecha
+                    prevista o antes"</p>
             </div>
             <div>
-                <p>"Gran trabajador, que ayuda siempre a compañeros que tengan dudas o necesiten ayuda con un trabajo"</p>
+                <p>"Gran trabajador, que ayuda siempre a compañeros que tengan dudas o necesiten ayuda con un trabajo"
+                </p>
                 <video controls poster="media/img/poster2.jpg">
                     <source src="media/video/Testimonio de manolita.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                    Your browser does not support the video tag.
                 </video>
             </div>
         </div>
@@ -97,23 +104,23 @@
             <h1>Estudios e información laboral</h1>
             <div class="timeline">
                 <div class="container left">
-                  <div class="content">
-                    <h2>2019</h2>
-                    <p>Bachillerato Tecnológico y B2 de Ingles</p>
-                  </div>
+                    <div class="content">
+                        <h2>2019</h2>
+                        <p>Bachillerato Tecnológico y B2 de Ingles</p>
+                    </div>
                 </div>
                 <div class="container right">
-                  <div class="content">
-                    <h2>2022</h2>
-                    <p>Grado superior de desarrollo de aplicaciones web y prácticas de empresa</p>
-                  </div>
+                    <div class="content">
+                        <h2>2022</h2>
+                        <p>Grado superior de desarrollo de aplicaciones web y prácticas de empresa</p>
+                    </div>
                 </div>
                 <div class="container left">
                     <div class="content">
-                      <h2>2023</h2>
-                      <p>Trabajando en x compañia durante un año como x programador</p>
+                        <h2>2023</h2>
+                        <p>Trabajando en x compañia durante un año como x programador</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
@@ -123,27 +130,31 @@
                 y algun minijuego como hobbie. <br>
                 Soy gran fan de las artes marciales, comida rica y de hecharme siesta los días que
                 puedo permitírmelo.</p>
-                <picture>
-                    <source media="(max-width: 600px)" srcset="media/img/yo.png">
-                    <img src="media/img/yo-big.jpg" alt="no esta">
-                </picture>
+            <picture>
+                <source media="(max-width: 600px)" srcset="media/img/yo.png">
+                <img src="media/img/yo-big.jpg" alt="no esta">
+            </picture>
         </div>
     </main>
     <footer>
-        <h1>Contáctame: </h1>
-        <form action="#" method="get">
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" id="nombre" maxlength="50" required>
-            <label for="apellidos">Apellidos: </label>
-            <input type="text" name="apellidos" id="apellidos" maxlength="50" required>
-            <label for="mail">Mail: </label>
-            <input type="text" name="mail" id="mail" required pattern="^\w+@\w+\.\w+$">
-
-            <label for="mensaje">Mensaje: </label>
-            <textarea  name="mensaje" id="mensaje" cols="30" rows="8" style="resize: none;" required></textarea>
-
-            <input type="submit" value="Enviar" id="enviar">
-        </form>
+        <h1 id="button" class="button">Contáctame</h1>
+        <dialog id="dialog">
+            <form action="#" method="get">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" maxlength="50" required>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos" maxlength="50" required>
+                <label for="mail">Mail: </label>
+                <input type="text" name="mail" id="mail" required pattern="^\w+@\w+\.\w+$">
+    
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="8" style="resize: none;" required></textarea>
+                <div>
+                    <input type="submit" value="Enviar" id="enviar">
+                    <button id="cancelar">cancelar</button>
+                </div>
+            </form>
+        </dialog>
         <div>
             <p>(c) Trabajo hecho por Pablo Leal del Ojo Bravo</p>
             <div id="icons">
@@ -164,4 +175,5 @@
         </div>
     </footer>
 </body>
+
 </html>

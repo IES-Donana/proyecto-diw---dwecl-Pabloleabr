@@ -57,3 +57,12 @@ var pselect = document.querySelectorAll(".pcircles");
 addActiveDisplay(nav);
 addActiveDisplay(pselect);
 
+//buton de contacto
+const dialog = document.getElementById('dialog');
+document.getElementById('button').addEventListener('click', () => dialog.showModal());
+document.getElementById('cancelar').addEventListener('click', (e) =>{
+    e.preventDefault();
+    dialog.close();
+})
+
+

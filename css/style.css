@@ -119,9 +119,19 @@ footer > div {
   grid-column: 4 / 6;
   grid-row: 1 / 8;
 }
-footer > form {
+footer form {
   grid-column: 1 / 4;
   grid-row: 2 / 8;
+}
+dialog{
+  background-color:#1b314a;
+  color: white;
+  border: none;
+  padding: 2rem;
+  border-radius: 5%;
+}
+dialog::backdrop {
+  background-color: #00000050;
 }
 .inicio > picture,
 .proyectoWindow {
@@ -215,6 +225,17 @@ footer {
   margin-top: 20vh;
   padding: 50px 12vw;
   column-gap: 50px;
+}
+.button{
+  background-color: #000f2250;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px 2px black;
+  padding: 1.2rem;
+  user-select: none;
+}
+.button:hover{
+  background-color: #000f2290;
+  box-shadow: none;
 }
 #icons {
   /*contenedor de iconos*/
