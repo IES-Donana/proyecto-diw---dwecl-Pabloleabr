@@ -123,8 +123,12 @@ footer form {
   grid-column: 1 / 4;
   grid-row: 2 / 8;
 }
-dialog{
-  background-color:#1b314a;
+form input {
+  margin-bottom: 5px;
+}
+
+dialog {
+  background-color: #1b314a;
   color: white;
   border: none;
   padding: 2rem;
@@ -136,15 +140,10 @@ dialog::backdrop {
 .inicio > picture,
 .proyectoWindow {
   border-radius: 5%;
-
 }
 details:first-of-type {
-    margin-top : 35px;
+  margin-top: 35px;
 }
-#enviar {
-  margin: 6px 28px;
-}
-
 .inicio > picture {
   width: 30vw;
   display: flex;
@@ -152,6 +151,7 @@ details:first-of-type {
   background-color: transparent;
   height: unset;
   border-radius: 50%;
+  margin-left: 10px;
 }
 #proyectos > p {
   /*arreglo de posicionamiento de texto*/
@@ -183,7 +183,8 @@ video {
 #fondo > video {
   border-radius: 0%;
   width: 100vw;
-  object-fit: fill;
+  object-fit: cover;
+  height: 100vh;
   margin: 0;
 }
 #fondo > div {
@@ -231,14 +232,15 @@ footer {
   padding: 50px 12vw;
   column-gap: 50px;
 }
-.button{
+.button {
   background-color: #000f2250;
   border-radius: 10%;
   box-shadow: 2px 2px 2px 2px black;
   padding: 1.2rem;
   user-select: none;
+  transition: all 1s;
 }
-.button:hover{
+.button:hover {
   background-color: #000f2290;
   box-shadow: none;
 }
