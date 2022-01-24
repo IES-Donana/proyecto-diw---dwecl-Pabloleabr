@@ -139,15 +139,18 @@ dialog::backdrop {
 
 }
 details:first-of-type {
-  margin-top : 35px;
+    margin-top : 35px;
 }
 #enviar {
   margin: 6px 28px;
 }
 
 .inicio > picture {
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  height: unset;
   border-radius: 50%;
 }
 #proyectos > p {
@@ -169,6 +172,7 @@ details:first-of-type {
 video {
   border-radius: 5%;
   width: 40vw;
+  object-fit: cover;
 }
 #fondo {
   width: 100vw;
@@ -196,6 +200,7 @@ video {
 }
 .inicio img {
   border-radius: 50%;
+  width: 30vw;
 }
 #proyectImg {
   border: 2px inset #0d2c4f;
@@ -392,12 +397,6 @@ footer > div > p {
   #fondo > video {
     width: 100vw;
     max-width: 100vw;
-  }
-  .inicio > picture {
-    width: 50vw;
-    display: flex;
-    background-color: transparent;
-    height: unset;
   }
   p {
     padding: 0.5vw;
