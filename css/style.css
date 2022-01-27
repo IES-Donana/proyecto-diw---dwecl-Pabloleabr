@@ -134,6 +134,9 @@ dialog {
   padding: 2rem;
   border-radius: 5%;
 }
+form > div {
+  margin-top: 5px;
+}
 dialog::backdrop {
   background-color: #00000050;
 }
