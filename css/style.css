@@ -148,13 +148,11 @@ details:first-of-type {
   margin-top: 35px;
 }
 .inicio > picture {
-  width: 30vw;
   display: flex;
   justify-content: center;
   background-color: transparent;
   height: unset;
   border-radius: 50%;
-  margin-left: 10px;
 }
 #proyectos > p {
   /*arreglo de posicionamiento de texto*/
@@ -225,7 +223,7 @@ video {
 }
 #testimonio p {
   /*ajuste del tamaño para que quede bien*/
-  height: 80px;
+  height: auto;
 }
 
 footer {
@@ -415,10 +413,10 @@ footer > div > p {
     transform: translate(2vw, 20vh);
   }
   /*esconde el meno de nav original lo cual es redundante pero es para aplicar el
-    efecto de navegacion que se ha añadido con el menu hamburguesa*/
+    efecto de navegacion que se ha añadido con el menu hamburguesa
   .original {
     visibility: hidden;
-  }
+  }*/
 
   /* Hace que los elemento se muestren verticalemnte en vez de horizontal*/
   #proyectos,

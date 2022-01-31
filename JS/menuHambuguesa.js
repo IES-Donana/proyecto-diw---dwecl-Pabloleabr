@@ -24,9 +24,9 @@ var timeout;//varible para el timeout de remover el menu
  * @returns void
  */
 function toggleMenu() {
-    if(this.classList.contains('is-active')){
-        /*tengo que hacerlo por separado en cada caso para que se muestres
-        la animacion de salida en este caso y la de entrada en el else */
+    /*if(this.classList.contains('is-active')){
+        //tengo que hacerlo por separado en cada caso para que se muestres
+        //la animacion de salida en este caso y la de entrada en el else 
         navlist.classList.toggle('is_active');
         timeout = setTimeout(()=>navlist.remove(),1000);
     }
@@ -38,10 +38,11 @@ function toggleMenu() {
 
         //funcion del main para darle el efecto de quedarse pulsado
         addActiveDisplay(document.getElementById('creado').querySelectorAll('.circle'));
-        /*hago un get id y despues el query selector para coger solo los del creado y no los del
-        original ta que tienen las mismas clases*/
-    }
-  this.classList.toggle('is-active');
+        //hago un get id y despues el query selector para coger solo los del creado y no los del
+        //original ta que tienen las mismas clases
+    }*/
+    document.getElementById("sidenavO").classList.toggle("is_active");
+    this.classList.toggle('is-active');
 }
 
 var menu = document.querySelector('#hamburguesa');
