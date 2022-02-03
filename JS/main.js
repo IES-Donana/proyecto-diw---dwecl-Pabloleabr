@@ -60,6 +60,10 @@ addActiveDisplay(pselect);
 //buton de contacto
 const dialog = document.getElementById('dialog');
 document.getElementById('button').addEventListener('click', () => dialog.showModal());
+document.getElementById('button').addEventListener('keypress', (e) =>{
+    if(e.key === "Enter"){
+        dialog.showModal()
+    }});
 document.getElementById('cancelar').addEventListener('click', (e) =>{
     e.preventDefault();
     dialog.close();
