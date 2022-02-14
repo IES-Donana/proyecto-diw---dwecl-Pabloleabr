@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="JS/main.js" defer></script>
+    <script src="JS/form.js" defer></script>
+    <script src="JS/menuHambuguesa.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="media/img/logo.ico">
+</head>
+
+<body>
+    <!--Esta hecho pero no me gusta que se escuche eso al abrir
+    <audio autoplay><source src="media/audio/bk-sound.mp3" type="audio/mpeg"></audio>
+    -->
+    <header>
+        <h3 style="color:white;">Portfolio</h3>
+        <img src="media/img/logotipo.svg" alt="Logo svg de la página" width="40px" height="40px">
+    </header>
+    <div id="fondo">
+        <video autoplay muted loop>
+            <source src="media/video/Light_Background.mov" type="video/mp4">
+        </video>
+        <div></div>
+    </div>
+    <div id="hamburguesa">
+        <div class="_layer -top"></div>
+        <div class="_layer -mid"></div>
+        <div class="_layer -bottom"></div>
+    </div>
+    <div class="sidenav original" id="sidenavO">
+        <a href="#" title="Enlace a inicio">
+            <div class="circle active"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i></div>
+        </a><a href="#proyectos" title="Enlace a proyectos">
+            <div class="circle"><i class="fa fa-file-code-o fa-2x" style="transform: translate(10px, 9px);" aria-hidden="true"></i></div>
+        </a><a href="#testimonio" title="Enlace a testimonios">
+            <div class="circle"><i class="fa fa-users fa-2x" aria-hidden="true" style="transform: translate(7px, 9px);"></i></div>
+        </a><a href="#estudios" title="Enlace a estudios previos">
+            <div class="circle"><i class="fa fa-history fa-2x" aria-hidden="true" style="transform: translate(10px, 9px);"></i></div>
+        </a><a href="#mas" title="Enlace a más sobre mí">
+            <div class="circle"><i class="fa fa-plus fa-2x" aria-hidden="true"  style="transform: translate(11px, 11px);"></i></div>
+        </a>
+    </div>
+    <main>
+        <div class="inicio">
+            <h1 style="color:white;">Un poco sobre mí</h1>
+            <p>Me llamo Pablo Leal del Ojo y soy un joven desarrolador de aplicaciones web, que le entusiasma el
+                mundo de la programación y estar constantemente aprendiendo cosas nuevas. <br>
+                Con esta página espero que aprendas un poco sobre mí, mís habilidades actuales y mí pasión por mí
+                trabajo</p>
+            <picture>
+                <source media="(max-width: 600px)" srcset="media/img/yo.png">
+                <img src="media/img/yo-big.jpg" alt="Imagen de mí cara">
+            </picture>
+
+        </div>
+        <div id="proyectos">
+            <h1>Proyectos</h1>
+            <p id="pProyect">Pariclicker es un proyecto, no terminado todavia hecho por mi y Ricardo Arana que fue hecho
+                con el proposito de aprender y es un juego
+                del genero de los clickers entorno ha hacer ejercicio, que consiste en pulsar y subir tu fuerza y basico
+                y simple pero sirvio para el aprendizaje
+                de muchas cosas.<br>
+                Tanto este como todos los otro proyectos, te llevaran a la página al pulsarlos.</p>
+            <div class="proyectoWindow">
+                <div id="pcirclesContainer">
+                    <div class="pcircles active" id="1" title="Proyecto-1" tabindex="0"></div>
+                    <div class="pcircles" id="2" title="Proyecto-1" tabindex="0"></div>
+                    <div class="pcircles" id="3" title="Proyecto-1" tabindex="0"></div>
+                </div>
+                <a href="https://pabloleabr.github.io/Parikiclicker/" id="plink" target="_blank">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="media/img/proyecto-1-sm.jpeg" id="pSource">
+                        <img src="media/img/proyecto-1.jpeg" alt="Imagen del proyecto" id="proyectImg">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div id="testimonio">
+            <h1>Testimonios</h1>
+            <div>
+                <video controls poster="media/img/poster1.jpg">
+                    <source src="media/video/Testimonio de manolita.mp4" type="video/mp4">
+                </video>
+
+                <p>"Trabaja de manera profesional, rápido y sin distracciones siempre haciendo su trabajo para la fecha
+                    prevista o antes"</p>
+            </div>
+            <div>
+                <p>"Gran trabajador, que ayuda siempre a compañeros que tengan dudas o necesiten ayuda con un trabajo"
+                </p>
+                <video controls poster="media/img/poster2.jpg">
+                    <source src="media/video/Testimonio de manolita.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="estudios">
+            <h1>Estudios e información laboral</h1>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>2019</h2>
+                        <p>Bachillerato Tecnológico y B2 de Ingles</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2022</h2>
+                        <p>Grado superior de desarrollo de aplicaciones web y prácticas de empresa</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2023</h2>
+                        <p>Trabajando en x compañia durante un año como x programador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mas inicio">
+            <h1 id="mas">¿Que más tienes que saber sobre mí?</h1>
+            <p>Ademas de estudiar y trabajar como desarrolador de appliciones web, me gusta desarrollar aplicaciones
+                y algun minijuego como hobbie. <br>
+                Soy gran fan de las artes marciales, comida rica y de hecharme siesta los días que
+                puedo permitírmelo.</p>
+            <picture>
+                <source media="(max-width: 600px)" srcset="media/img/yo.png">
+                <img src="media/img/yo-big.jpg" alt="Imagen de mí cara por segunda vez">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <h1 id="button" class="button" style="color: white;" tabindex="0">Contáctame</h1>
+        <dialog id="dialog">
+            <form action="#" method="get">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" maxlength="50" required>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos" maxlength="50" required>
+                <label for="mail">Mail: </label>
+                <input type="text" name="mail" id="mail" required pattern="^\w+@\w+\.\w+$">
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="8" style="resize: none;" required></textarea>
+                <div>
+                    <input type="submit" value="Enviar" id="enviar">
+                    <button id="cancelar">Cancelar</button>
+                </div>
+            </form>
+        </dialog>
+        <div>
+            <p>(c) Trabajo hecho por Pablo Leal del Ojo Bravo</p>
+            <div id="icons">
+                <a href="#" class="fa fa-facebook fa-3x" title="Enlace a facebook"></a>
+                <a href="#" class="fa fa-twitter fa-3x" title="Enlace a twitter"></a>
+                <a href="#" class="fa fa-phone fa-3x" title="Enlace a número teléfono"></a>
+                <a href="https://github.com/IES-Donana/proyecto-diw---dwecl-Pabloleabr" class="fa fa-github fa-3x" title="Enlace a github"></a>
+                <a href="#" class="fa fa-whatsapp fa-3x" title="Enlace a whatsapp"></a>
+            </div>
+            <details>
+                <summary>Información adicional</summary>
+                <p>Todas las imágenes y videos usados son libre de uso</p>
+                <details>
+                    <summary>Logo animado no ver...</summary>
+                    <img src="media/img/logo-animado.gif" alt="Logo animado feo">
+                </details>
+            </details>
+        </div>
+    </footer>
+</body>
+
+</html>
