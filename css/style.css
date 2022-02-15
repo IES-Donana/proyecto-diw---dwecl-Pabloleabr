@@ -44,7 +44,7 @@ h3,
 h1 {
   font-family: "Mochiy Pop P One", sans-serif;
   color: black;
-  
+
 }
 p {
   font-family: "Lato", sans-serif;
@@ -520,5 +520,20 @@ footer > div > p {
   /* hace que todso los contenedores de izquieda se vuelvan derecha */
   .right {
     left: 0%;
+  }
+}
+
+@media print {
+  video{
+      display: none;
+  }
+  .sidenav{
+      display: none;
+  }
+  #button{
+      display: none;
+  }
+  p{
+      color: black;
   }
 }
