@@ -33,6 +33,7 @@ footer {
   background-color: #1b314a;
   box-shadow: 0px 0px 5px 5px#000;
 }
+
 header > img {
   align-self: center;
   right: 10px;
@@ -40,11 +41,12 @@ header > img {
   filter: opacity(60%);
   animation: logo 3s none 0.5s 1;
 }
-h3,
-h1 {
+h3, h1 {
   font-family: "Mochiy Pop P One", sans-serif;
   color: black;
-
+}
+header > h3, .inicio > h1{ /*mejora de visibilidad con contraste*/
+    color:white;
 }
 p {
   font-family: "Lato", sans-serif;
@@ -155,6 +157,7 @@ details:first-of-type {
   background-color: transparent;
   height: unset;
   border-radius: 50%;
+  margin-left: 20px;
 }
 #proyectos > p {
   /*arreglo de posicionamiento de texto*/
@@ -524,16 +527,16 @@ footer > div > p {
 }
 
 @media print {
-  video{
+  video, #icons, .sidenav, #button, details{
       display: none;
   }
-  .sidenav{
-      display: none;
-  }
-  #button{
-      display: none;
-  }
-  p{
+  p, h3, h1{
       color: black;
+  }
+  #testimonio{
+      page-break-before: always;
+  }
+  footer, header{
+      box-shadow: none;
   }
 }
