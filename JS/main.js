@@ -42,7 +42,8 @@ function cambiarContProyec(eleArray, e){
         }
     }
     eleArray.forEach(ele =>{
-        ele.className = ele.className.replace(" active","");
+        ele.className = ele.className.replace(" semiActive","");
+        ele.className = ele.className.replace(" active"," semiActive");
     })
     e.className += " active";
 }

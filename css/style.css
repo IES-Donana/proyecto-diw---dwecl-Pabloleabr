@@ -97,6 +97,10 @@ p {
   box-shadow: none;
   border: #6f9ed2 solid 1px;
 }
+
+.semiActive{
+  filter: grayscale(90%);
+}
 main {
   margin-left: 15vw;
   margin-right: 10vw;
@@ -376,6 +380,25 @@ footer > div > p {
   background: #396699;
   border-radius: 10px;
 }
+#buscador-div {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+}
+#buscador {
+  background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+  background-size: 24px;
+  background-color: white;
+  width: 50px;
+  border: transparent;
+  border-bottom: solid 1px rgb(250, 250, 250);
+  padding: 10px 10px 10px 30px;
+  outline: none;
+  border-radius: 5%;
+  margin: 20px;
+}
+
 
 @keyframes bubble {
   0% {
