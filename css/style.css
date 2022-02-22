@@ -45,7 +45,7 @@ h3, h1 {
   font-family: "Mochiy Pop P One", sans-serif;
   color: black;
 }
-header > h3, .inicio > h1{ /*mejora de visibilidad con contraste*/
+header h3, .inicio h1{ /*mejora de visibilidad con contraste*/
     color:white;
 }
 p {
@@ -173,6 +173,9 @@ details:first-of-type {
   /*espacios entre cada seccion*/
   margin-top: 20vh;
   column-gap: 2vw;
+}
+.mas h1{
+    color:black;
 }
 #proyectos {
   margin-top: 50vh;
@@ -399,7 +402,23 @@ footer > div > p {
   margin: 20px;
 }
 
-
+.bread{
+  list-style: none;
+  color: black;
+}
+.inicio .bread{
+    color:white;
+}
+.mas .bread{
+    color:black;
+}
+.bread li{
+  display: inline
+}
+.bread li+li:before {
+  content: ">";
+  padding: 5px;
+}
 @keyframes bubble {
   0% {
     transform: translateX(-10vw);
