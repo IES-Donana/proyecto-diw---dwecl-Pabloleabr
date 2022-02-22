@@ -406,6 +406,9 @@ footer > div > p {
   list-style: none;
   color: black;
 }
+.bread a{
+    color:#25007A;
+}
 .inicio .bread{
     color:white;
 }
@@ -418,6 +421,9 @@ footer > div > p {
 .bread li+li:before {
   content: ">";
   padding: 5px;
+}
+#testimonio > div:first-child{
+    display: grid;
 }
 @keyframes bubble {
   0% {
