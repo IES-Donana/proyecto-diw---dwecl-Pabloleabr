@@ -42,8 +42,10 @@ function cambiarContProyec(eleArray, e){
         }
     }
     eleArray.forEach(ele =>{
+        /*modo semi migas de pan
         ele.className = ele.className.replace(" semiActive","");
-        ele.className = ele.className.replace(" active"," semiActive");
+        ele.className = ele.className.replace(" active"," semiActive"); */
+        ele.className = ele.className.replace(" active","");
     })
     e.className += " active";
 }
